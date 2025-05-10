@@ -2,9 +2,8 @@ process.on('uncaughtException', console.error)
 process.on('unhandledRejection', console.error)
 
 /*
-	* Create By Naze
-	* Follow https://github.com/nazedev
-	* Whatsapp : wa.me/6282113821188
+	* Create By Shiyo
+	* Whatsapp : wa.me/6289512068732
 */
 
 require('./settings');
@@ -114,7 +113,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 				remoteJid: '0@s.whatsapp.net',
 				participant: '0@s.whatsapp.net',
 				fromMe: false,
-				id: 'Naze'
+				id: 'Shiyo'
 			},
 			message: {
 				contactMessage: {
@@ -216,7 +215,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 		}
 		
 		// Cek Expired
-		prem.expiredCheck(naze, premium);
+		prem.expiredCheck(shiyo, premium);
 		
 		// TicTacToe
 		let room = Object.values(tictactoe).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
